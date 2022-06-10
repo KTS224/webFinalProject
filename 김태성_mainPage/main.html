@@ -5,69 +5,89 @@
         <link rel="stylesheet" href="main_style.css">
     </head>
     <body>
-        <div class="menu-bar">
-            <a><img class="logo" src="IMG/main_logo.png"></a>
-            <a href="#">Home</a>
-            <a href="#">Data Wiki</a>
-            <a href="#">Share Hub</a>
-            <a href="#">Colosseum</a>
-            <a href="#">Forum</a>
-            <a><img class="logo" src="IMG/swai_link.png"></a>
-        </div>
+        <div class="wrap" style="width: fit-content;">
+            <nav class="menu-bar" style="width: 1088px;">
+                <a href="main.html"><img class="logo" src="IMG/main_logo.png"></a>
+                <a href="#" class="bar-item">Home</a>
+                <a href="#" class="bar-item">Data Wiki</a>
+                <a href="#" class="bar-item">Share Hub</a>
+                <a href="#" class="bar-item">Colosseum</a>
+                <a href="#" class="bar-item">Forum</a>
+                <a href="https://swai.smu.ac.kr"><img class="logo" src="IMG/swai_link.png"></a>
+            </nav>
 
-        <div class="blue_bar">
+            <!-- <div class="blue_bar">
+                <img class="blue-bar"
+            </div> -->
+
+            <br>
             
-        </div>
-
-        <br>
-        
-        <div class="picture_slide">
-            <img class="mySlides" src="IMG/pic1.jpeg" style="width:100%; height: 300px">
-            <img class="mySlides" src="IMG/pic2.jpeg" style="width:100%; height: 300px">
-            <img class="mySlides" src="IMG/pic3.jpeg" style="width:100%; height: 300px">
-            <img class="mySlides" src="IMG/pic4.jpeg" style="width:100%; height: 300px">
-            <img class="mySlides" src="IMG/pic5.jpeg" style="width:100%; height: 300px">
-        </div>
+            <div class="picture_slide">
+                <img src="IMG/blue_bar.png" style="width: 1088px; height: 50px;">
+                <img class="mySlides" src="IMG/pic1.jpeg" style="width: 1088px; height: 300px">
+                <img class="mySlides" src="IMG/pic2.jpeg" style="width: 1088px; height: 300px">
+                <img class="mySlides" src="IMG/pic3.jpeg" style="width: 1088px; height: 300px">
+                <img class="mySlides" src="IMG/pic4.jpeg" style="width: 1088px; height: 300px">
+                <img class="mySlides" src="IMG/pic5.jpeg" style="width: 1088px; height: 300px">
+            </div>
 
 
-        <script>
-            var myIndex = 0;
-            carousel();
-            
-            function carousel() {
-                var i;
-                var x = document.getElementsByClassName("mySlides");
-                for (i = 0; i < x.length; i++) {
-                   x[i].style.display = "none";  
+            <script>
+                var myIndex = 0;
+                carousel();
+                
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) {myIndex = 1}    
+                    x[myIndex-1].style.display = "block";  
+                    setTimeout(carousel, 5000);
                 }
-                myIndex++;
-                if (myIndex > x.length) {myIndex = 1}    
-                x[myIndex-1].style.display = "block";  
-                setTimeout(carousel, 5000);
-            }
-            </script>
+                </script>
 
 
-        <div>
-            <br>공지 인기많은글<br>
-        </div> 
-        <footer>
-            <div class="layoutLeft">
-                <div class="link">
-                    <ul>
-                        <li class="color"><a href="https://www.smu.ac.kr/ko/intro/privacyPolicy.do" target="_blank">개인정보처리방침</a></li>
-                        <li><a href="https://swai.smu.ac.kr/98/03.php">이메일주소무단수집거부</a></li>
-                    </ul>
+            <div>
+                <br>공지 인기많은글<br>
+                <br>공지 인기많은글<br>
+                <br>공지 인기많은글<br>
+                <br>공지 인기많은글<br>
+                <br>공지 인기많은글<br>
+                <br>공지 인기많은글<br>
+                <br>공지 인기많은글<br>
+                <br>공지 인기많은글<br>
+                <br>공지 인기많은글<br>
+                <br>공지 인기많은글<br>
+                <br>공지 인기많은글<br>
+                <br>공지 인기많은글<br>
+                <br>공지 인기많은글<br>
+                <br>공지 인기많은글<br>
+            </div> 
+
+
+            
+            <footer style="width: 1088px;">
+                <div class="layoutLeft">
+                    <div class="link">
+                        <ul>
+                            <li style="float: left;" class="color"><a href="https://www.smu.ac.kr/ko/intro/privacyPolicy.do" target="_blank">개인정보처리방침</a></li>
+                            
+                            <li><a href="https://swai.smu.ac.kr/98/03.php">이메일주소무단수집거부</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="copyright">
-                <div class="info">
-                    <span class="address">(03016) 서울시 종로구 홍지문 2길 20 상명대학교 SW중심대학사업단</span>
+                <div class="copyright">
+                    <div class="info">
+                        <span class="address">(03016) 서울시 종로구 홍지문 2길 20 상명대학교 SW중심대학사업단</span>
+                    </div><br>
+                    <div class="info">
+                        <span class="copy">Copyright By SangMyung University. All Rights Reserved.</span>
+                    </div>
                 </div>
-                <div class="info">
-                    <span class="copy">Copyright By SangMyung University. All Rights Reserved.</span>
-                </div>
-            </div>
-        </footer>        
+            </footer>      
+        </div>  
     </body>
 </html>
