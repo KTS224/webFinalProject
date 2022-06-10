@@ -24,12 +24,41 @@
             
             <div class="picture_slide">
                 <img src="IMG/blue_bar.png" style="width: 1088px; height: 50px;">
-                <img class="mySlides" src="IMG/pic1.jpeg" style="width: 1088px; height: 300px">
+                <img class="mySlides" src="IMG/pic1.jpeg" style="width: 1088px; height: 300px;">
                 <img class="mySlides" src="IMG/pic2.jpeg" style="width: 1088px; height: 300px">
                 <img class="mySlides" src="IMG/pic3.jpeg" style="width: 1088px; height: 300px">
                 <img class="mySlides" src="IMG/pic4.jpeg" style="width: 1088px; height: 300px">
                 <img class="mySlides" src="IMG/pic5.jpeg" style="width: 1088px; height: 300px">
             </div>
+
+            <!-- <div>
+                <div id="pic1" style="position: absolute;">
+                    <div style="position: relative;">
+                        <img src="IMG/pic1.jpeg" style="width: 1088px; height: 300px"></img>
+                    </div>
+                </div>
+                <div id="pic2" style="position: absolute;">
+                    <div style="position: relative;">
+                        <img src="IMG/pic2.jpeg" style="width: 1088px; height: 300px"></img>
+                    </div>
+                </div>
+                <div id="pic3" style="position: absolute;">
+                    <div style="position: relative;">
+                        <img src="IMG/pic3.jpeg" style="width: 1088px; height: 300px"></img>
+                    </div>
+                </div>
+                <div id="pic4" style="position: absolute;">
+                    <div style="position: relative;">
+                        <img src="IMG/pic4.jpeg" style="width: 1088px; height: 300px"></img>
+                    </div>
+                </div>
+                <div id="pic5 style="position: absolute;">
+                    <div style="position: relative;">
+                        <img src="IMG/pic5.jpeg" style="width: 1088px; height: 300px"></img>
+                    </div>
+                </div>
+            </div> -->
+
 
 
             <script>
@@ -43,12 +72,14 @@
                     x[i].style.display = "none";  
                     }
                     myIndex++;
-                    if (myIndex > x.length) {myIndex = 1}    
+                    if (myIndex > x.length) {
+                        myIndex = 1
+                    }
+                    trans
                     x[myIndex-1].style.display = "block";  
                     setTimeout(carousel, 5000);
                 }
-                </script>
-
+            </script>
 
             <div>
                 <br>공지 인기많은글<br>
@@ -79,7 +110,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="copyright">
+                <div class="copyright" style="margin: 30px;" >
                     <div class="info">
                         <span class="address">(03016) 서울시 종로구 홍지문 2길 20 상명대학교 SW중심대학사업단</span>
                     </div><br>

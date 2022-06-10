@@ -2,7 +2,7 @@
     margin: 0;
     margin-right: auto;
     margin-left: auto; 
-    background-color: aqua;
+    background-color:honeydew;
 }
 
 .menu-bar {
@@ -43,7 +43,7 @@
 
 footer {
     background-color: #3c3c3c;
-    color: #808080;
+    color: #999;
     display: inline-block;
     -webkit-font-smoothing: antialiased;
 }
@@ -88,3 +88,25 @@ footer ul li a:focus, footer ul li a:hover {
 footer ul li.color a:hover {
     color: #fff580;
 }
+
+footer .copyright .info .copy{
+    text-transform: uppercase;
+}
+
+/* #pic1 {
+    animation-name: fadeOut;
+    animation-duration: 1s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  } */
