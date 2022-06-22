@@ -3,6 +3,58 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="main_style.css">
+        <style>
+            * {box-sizing: border-box;}
+            body {font-family: Verdana, sans-serif;}
+            .mySlides {display: none;}
+            img {vertical-align: middle;}
+
+            /* Slideshow container */
+            .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+            z-index: 1;
+            }
+
+            /* The dots/bullets/indicators */
+            .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+            }
+
+            .active {
+            background-color: #717171;
+            }
+
+            /* Fading animation */
+            .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+            }
+
+            @-webkit-keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+            }
+
+            @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+            }
+
+            /* On smaller screens, decrease text size */
+            @media only screen and (max-width: 300px) {
+            .text {font-size: 11px}
+            }
+        </style>
     </head>
     <body>
         <div class="wrap" style="width: fit-content;">
@@ -17,69 +69,64 @@
                     <a href="https://swai.smu.ac.kr"><img class="logo" src="IMG/swai_link.png"></a>
                 </nav>
             </header>
-            
-
-            <!-- <div class="blue_bar">
-                <img class="blue-bar"
-            </div> -->
 
             <br><br>
             
             <div class="picture_slide">
                 <img class="blue-bar" src="IMG/blue_bar.png" style="height: 50px;">
-                <img class="mySlides" src="IMG/01.png" style="height: 300px">
-                <img class="mySlides" src="IMG/02.png" style="height: 300px">
-                <img class="mySlides" src="IMG/03.png" style="height: 300px">
-                <img class="mySlides" src="IMG/04.png" style="height: 300px">
-                <img class="mySlides" src="IMG/05.png" style="height: 300px">
             </div>
 
-            <!-- <div>
-                <div id="pic1" style="position: absolute;">
-                    <div style="position: relative;">
-                        <img src="IMG/pic1.jpeg" style="height: 300px"></img>
-                    </div>
-                </div>
-                <div id="pic2" style="position: absolute;">
-                    <div style="position: relative;">
-                        <img src="IMG/pic2.jpeg" style="height: 300px"></img>
-                    </div>
-                </div>
-                <div id="pic3" style="position: absolute;">
-                    <div style="position: relative;">
-                        <img src="IMG/pic3.jpeg" style="height: 300px"></img>
-                    </div>
-                </div>
-                <div id="pic4" style="position: absolute;">
-                    <div style="position: relative;">
-                        <img src="IMG/pic4.jpeg" style="height: 300px"></img>
-                    </div>
-                </div>
-                <div id="pic5 style="position: absolute;">
-                    <div style="position: relative;">
-                        <img src="IMG/pic5.jpeg" style="height: 300px"></img>
-                    </div>
-                </div>
-            </div> -->
+            <div class="slideshow-container">
 
+                <div class="mySlides fade">
+                    <img src="IMG/01.png" style="width: 860px; height: 300px;">
+                </div>
 
+                <div class="mySlides fade">
+                    <img src="IMG/02.png" style="width: 860px; height: 300px;">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="IMG/03.png" style="width: 860px; height: 300px;">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="IMG/04.png" style="width: 860px; height: 300px;">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="IMG/05.png" style="width: 860px; height: 300px;">
+                </div>
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+            </div>
 
             <script>
-                var myIndex = 0;
-                carousel();
+                var slideIndex = 0;
+                showSlides();
                 
-                function carousel() {
-                    var i;
-                    var x = document.getElementsByClassName("mySlides");
-                    for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";  
-                    }
-                    myIndex++;
-                    if (myIndex > x.length) {
-                        myIndex = 1
-                    }
-                    x[myIndex-1].style.display = "block";  
-                    setTimeout(carousel, 5000);
+                function showSlides() {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                  setTimeout(showSlides, 5000);
                 }
             </script>
 
