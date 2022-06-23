@@ -107,3 +107,8 @@ footer .copyright .info .copy{
   .menu-bar, .blue-bar, .mySlides, footer {
       width: 860px;
   }
+
+  .footerform {
+    position: relative;
+    padding-left: 600px;
+}
