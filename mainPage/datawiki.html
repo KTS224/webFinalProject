@@ -14,7 +14,7 @@
                 padding-right: 100px;
             }
             table { table-layout: fixed; width: 60%; font-size: 5px;} 
-            iframe {float: right; position: absolute; right:  5%;}
+            iframe {float: right; position: absolute; right: 1%;}
 
             header {
                 position: relative;
@@ -34,7 +34,7 @@
                     <a href="datawiki.html" class="bar-item">DataWiki</a>
                     <a href="sharehub.html" class="bar-item">ShareHub</a>
                     <a href="#" class="bar-item">Colosseum</a>
-                    <a href="forumm.html" class="bar-item">Forum</a>
+                    <a href="forum.html" class="bar-item">Forum</a>
                     <a href="https://swai.smu.ac.kr"><img class="logo" src="IMG/swai_link.png"></a>
                 </nav>
             </header>
@@ -44,14 +44,18 @@
 
             <body>
                 <form method="get" action="form_app.js">
-                    정렬기준: <input type="button" value="Name" onclick="sortTable(1)"/>
-                            <input type="button" value="Category" onclick="sortTable(4)"/>
-                            <input type="button" value="Task" onclick="sortTable(6)"/>
-                            <input type="button" value="Tutorial o/x" onclick="sortTable(8)"/> <br/>
+                    <fieldset>
+
+                        <legend>정렬기준</legend>
+                         <input type="button" value="Name" onclick="sortTable(1)"/>
+                        <input type="button" value="Category" onclick="sortTable(4)"/>
+                        <input type="button" value="Task" onclick="sortTable(6)"/>
+                        <input type="button" value="Tutorial o/x" onclick="sortTable(8)"/> <br/>
+                    </fieldset>
                 </form>
 
-                
-                <iframe name="display" src="" width="400px" height="600px"></iframe>
+                <br/>
+                <iframe name="display" src="" width="550px" height="650px"></iframe>
                 <table id="inventory">
                     <thead>
                         <tr>
@@ -730,6 +734,7 @@
                         </tr>
                     </tbody>
                 </table>
+                <br/>
 
             </body>
 
