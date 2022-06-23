@@ -7,13 +7,14 @@
             table, th, td {
                 border: 1px solid #ccc;
             }
-            td {padding-left: 7px;}
+            td {padding-left: 7px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
 
             #description {
                 padding-left: 100px;
                 padding-right: 100px;
             }
-            table {overflow: scroll; width: 24%; height: 140px;}
+            table {table-layout: fixed; width: 60%; font-size: 5px;} 
+            iframe {float: right; position: absolute; right:  5%;}
         </style>
     </head>
     <body>
@@ -338,7 +339,6 @@
                             <td>sun</td>
                             <td><a href="https://vision.princeton.edu/projects/2010/SUN/" target="display">sun</a></td>
                             <td>-</td>
-                            <td>https://vision.princeton.edu/projects/2010/SUN/</td>
                             <td>https://vision.princeton.edu/projects/2010/SUN/</td>
                             <td>Image</td>
                             <td>Object Recognition</td>
