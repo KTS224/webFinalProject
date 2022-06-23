@@ -37,7 +37,7 @@
             justify-content: flex-start;
             align-items: center;
             flex-direction: column;
-            background-color:honeydew;
+            background-color:rgb(228, 245, 249);
             }
             
             .board__container {
@@ -49,6 +49,7 @@
            /* box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);*/
             position: relative;
             }
+            
             
             .contents__container {
             margin: 10px 0px;
@@ -85,6 +86,7 @@
             margin-right: 5px;
             }
             
+
             .board__index-link:hover {
             cursor: pointer;
             color: blue;
@@ -100,14 +102,15 @@
             border-bottom: 2px solid rgba(0, 0, 0, 0.08);
             margin-bottom: 20px;
             }
-            
+           
+
             .contents__column {
             width: 200px;
             display: flex;
             justify-content: space-around;
             align-items: center;
             }
-            
+            .contents__column :visited { color:green; }
             .contents__content {
             width: 600px;
             display: flex;
@@ -150,17 +153,20 @@
             
             button:active {
             transform: scale(0.93);
+            color:blue;
             }
 
             th {  padding: 7px; border : 1px solid black;  border-collapse : collapse;  border-left: none; border-right: none;border-top: none;    
             }     
+
+           /*#check1 { padding-left: 500px 10px;top: 50px; right: 0;}*/
 
             </style>
             <link rel="stylesheet" href="main_style.css">
         </head>
         <body>
             <div class="wrap" style="width: fit-content;">
-            <header>
+            <a id="check1" header> </a>
                 <nav class="menu-bar">
                     <a href="https://www.smu.ac.kr/ko/index.do"><img class="logo" src="IMG/main_logo.png"></a>
                     <a href="main.html" class="bar-item">Home</a>
@@ -168,7 +174,7 @@
                     <a href="#" class="bar-item">Share Hub</a>
                     <a href="#" class="bar-item">Colosseum</a>
                     <a href="#" class="bar-item">Forum</a>
-                    <a href="https://swai.smu.ac.kr"><img class="logo" src="IMG/swai_link.png"></a>
+                    <a  href="https://swai.smu.ac.kr" ><img class="logo" src="IMG/swai_link.png"></a>
                 </nav>
             </header>
             <br><br>
@@ -204,8 +210,18 @@
                         <button class="editor__btn" id="editor-submit-btn">작성 완료</button>
                     </form>
                 </div>
+                <a href="#check1" style="position: absolute; top:993px; right: 270px;"> <img height="50" src="upsign.jpg"/></a>
+                <!--<a href="#check1" style="position: absolute; top:993px; right: 270px;"> <img height="50" src="upsign.jpg"/></a>-->
+                <form style="position: absolute; top:593px; right: 25px;">
+                    <!--<form style="position: absolute; top:1093px; right: 25px;">-->
+                    
+                    <button type="button" title="memo">
+                    <h4> 메모장 </h4>
+                    <p><textarea  placeholder="Input some text." cols="35" rows="20"></textarea></p>
+                    
+                  </form>
             </main>
-            
+             
         <script>
             const boardTableBody = document.querySelector('#board-body');
             
@@ -466,6 +482,11 @@
             showBoardLists();
             }
             </script>
+
+        <div class="head">
+            
+            <!--<input type="text" size="100" maxlength="8" name="member_name"  value="메모장 기능"  > -->
+        </div>
 <br><br><br>
         <footer>
             <div class="layoutLeft">
@@ -473,7 +494,8 @@
                     <ul>
                         <li style="float: left;" class="color"><a href="https://www.smu.ac.kr/ko/intro/privacyPolicy.do" target="_blank">개인정보처리방침</a></li>
                         
-                        <li><a href="https://swai.smu.ac.kr/98/03.php">이메일주소무단수집거부</a></li>
+                        <li><a href="https://swai.smu.ac.kr/98/03.php">이메일주소무단수집거부</a></li></ul>
+                         
                     </ul>
                 </div>
             </div>
@@ -483,6 +505,13 @@
                 </div><br>
                 <div class="info">
                     <span class="copy">Copyright By SangMyung University. All Rights Reserved.</span>
+                    <!-- Big Buck Bunny - 4 - Death Becomes Fur<br/>-->
+                        <audio 
+                        src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.mp4" allow="autoplay" controls>
+                        Your browser does not support the audio tag
+                        </audio>
+                    
+                   
                 </div>
             </div>
         </footer>  
