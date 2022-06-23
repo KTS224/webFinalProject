@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main_style.css">
+    <title>공지사항</title>
+    <style>
+            ul {
+                list-style: none;
+            }
+
+            .info-wrap-inside > ul > li {
+                font-size: 20px;
+            }
+
+            .info-wrap-inside > ul > li > ul{
+                font-size: 15px;
+            }
+
+            legend {
+                font-size: 25px;
+                font-weight: bold;
+            }
+
+            td {
+                padding: 10px;
+            }
+
+            .cate {
+                color: #96163d;
+            }
+
+            .colosseum-color {
+                color: #2653ad;
+            }
+
+            .datawiki-name {
+                color: #96163d;
+            }
+
+            .tl {
+                text-align: center;
+            }
+
+            /* .menu-bar, .blue-bar, .mySlides, footer {
+                width: 2000px;
+            } */
+    </style>
+
+</head>
+<body>
+    <div class="wrap" style="width: fit-content;">
+
+        <header>
+            <nav class="menu-bar">
+                <a href="https://www.smu.ac.kr/ko/index.do"><img class="logo" src="IMG/main_logo.png"></a>
+                <a href="main.html" class="bar-item">Home</a>
+                <a href="datawiki.html" class="bar-item">DataWiki</a>
+                <a href="sharehub.html" class="bar-item">ShareHub</a>
+                <a href="colosseum.html" class="bar-item">Colosseum</a>
+                <a href="forum.html" class="bar-item">Forum</a>
+                <a href="https://swai.smu.ac.kr"><img class="logo" src="IMG/swai_link.png"></a>
+            </nav>
+        </header>
+
+        <br><br>
+        
+
+        <div>
+            <img class="blue-bar" src="IMG/blue_bar.png" style="height: 50px;">
+        </div>
+
+
+        <br><br><br>
+        <div>
+            <fieldset>  
+                <legend>👩‍💻Colosseum👨‍💻</legend>
+                <table>
+                    <colgroup>
+                        <col width="550px"/>
+                        <col width="150px"/>
+                        <col width="100px"/>
+                    </colgroup>
+                    <tr><th>제목</th><th>시작일</th><th>마감일</th></tr>
+                    <tr><td style = "cursor:pointer;" onClick = " location.href='http://www.cvlibs.net/datasets/kitti/' " onMouseOver = " window.status = 'http://www.cvlibs.net/datasets/kitti/' " onMouseOut = " window.status = '' "><span class="cate">[진행중] </span><span class="colosseum-color">도로위 인식의 최강자 선발 대회</span></td><td class="tl">2022.06.01</td><td>2022.07.01</td></tr>
+                    <tr><td style = "cursor:pointer;" onClick = " location.href='http://www.statmt.org/wmt19/' " onMouseOver = " window.status = 'http://www.statmt.org/wmt19/' " onMouseOut = " window.status = '' "><span class="cate">[진행중] </span><span class="colosseum-color">Did you understand what I said?</span></td><td class="tl">2022.08.01</td><td>2022.09.01</td></tr>
+                    <tr><td style = "cursor:pointer;" onClick = " location.href='http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html' " onMouseOver = " window.status = 'http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html' " onMouseOut = " window.status = '' "><span color="black">[마감] </span><span class="colosseum-color">천하제일 얼굴 인식대회</span></td><td class="tl">2022.04.01</td><td>2022.05.01</td></tr>
+                </table>
+            </fieldset>
+        </div><br>
+        <br><br>
+
+
+        <footer>
+            <div class="layoutLeft">
+                <div class="link">
+                    <ul>
+                        <li style="float: left;" class="color"><a href="https://www.smu.ac.kr/ko/intro/privacyPolicy.do" target="_blank">개인정보처리방침</a></li>
+                        
+                        <li><a href="https://swai.smu.ac.kr/98/03.php">이메일주소무단수집거부</a></li>
+                        <ul>
+                            <li>
+                                <form class="footerform">
+                                    <select onchange="window.open(value,'_blank');">
+                                      <option value="main.html">관련사이트</option>
+                                      <option value="https://www.smu.ac.kr/ctlc/index.do">교수학습개발센터</option>
+                                      <option value="https://www.smu.ac.kr/cilcec/index.do">국제언어문화교육원</option>
+                                      <option value="https://www.smu.ac.kr/uni">대외협력처</option>
+                                      <option value="https://www.smu.ac.kr/dc">상명수련원</option>
+                                      <option value="https://www.smu.ac.kr/iacf">산학협력단</option>
+                                      <option value="https://www.smu.ac.kr/rotc2021">학생군사교육단</option>
+                                      <option value="https://www.smu.ac.kr/scc">학생상담센터</option>
+                                      <option value="https://www.smu.ac.kr/dormi2">학생생활관</option>
+                                    </select>
+                                </form>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright" style="margin: 30px;" >
+                <div class="info">
+                    <span class="address">(03016) 서울시 종로구 홍지문 2길 20 상명대학교 SW중심대학사업단</span>
+                </div><br>
+                <div class="info">
+                    <span class="copy">Copyright By SangMyung University. All Rights Reserved.</span>
+                </div>
+            </div>
+        </footer> 
+
+
+    </div>  
+</body>
+</html>

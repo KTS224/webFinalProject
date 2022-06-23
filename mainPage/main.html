@@ -83,6 +83,22 @@
             td {
                 padding: 10px;
             }
+
+            .cate {
+                color: #96163d;
+            }
+
+            .colosseum-color {
+                color: #2653ad;
+            }
+
+            .datawiki-name {
+                color: #96163d;
+            }
+
+            .tl {
+                text-align: center;
+            }
         </style>
     </head>
     <body>
@@ -93,7 +109,7 @@
                     <a href="main.html" class="bar-item">Home</a>
                     <a href="datawiki.html" class="bar-item">DataWiki</a>
                     <a href="sharehub.html" class="bar-item">ShareHub</a>
-                    <a href="#" class="bar-item">Colosseum</a>
+                    <a href="colosseum.html" class="bar-item">Colosseum</a>
                     <a href="forum.html" class="bar-item">Forum</a>
                     <a href="https://swai.smu.ac.kr"><img class="logo" src="IMG/swai_link.png"></a>
                 </nav>
@@ -159,42 +175,58 @@
                 }
             </script>
 
-            <div class="info-wrap">
 
-                <div>
-                    <fieldset>  
-                        <legend>🔥Forum 인기글🔥</legend>
-                        <table>
-                            <tr><th>제목</th><th>날짜</th><th>조회수</th></tr>
-                            <tr><td>[공지사항] Datawiki가 새롭게 단장됩니다. 더욱 개선된 사이트를 기대해 주세요.</td><td>2022.05.08</td><td>100</td></tr>
-                            <tr><td>[튜토리얼 공지] tensorflow와 keras의 라이브러리를 이용하여 같이 공부해 봅시다.</td><td>2022.05.19</td><td>84</td></tr>
-                            <tr><td>[공모전 종료 안내] 2022년 데이터 위키 공모전이 성공리에 마감 되었습니다. </td><td>2022.05.14</td><td>50</td></tr>
-                        </table>
-                    </fieldset>
-                </div><br>
+
+            <div class="info-wrap">
 
 
                 <div>
                     <fieldset>  
                         <legend>공지사항</legend>
                         <table>
+                            <colgroup>
+                                <col width="550px"/>
+                                <col width="150px"/>
+                                <col width="100px"/>
+                            </colgroup>
                             <tr><th>제목</th><th>날짜</th><th>조회수</th></tr>
-                            <tr><td>[신규 데이터 요청] 새로운 데이터가 필요하신 분은 언제든 요청 바랍니다. </td><td>2022.05.21</td><td>3</td></tr>
-                            <tr><td>[튜토리얼 공지] tensorflow와 keras의 라이브러리를 이용하여 같이 공부해 봅시다.</td><td>2022.05.19</td><td>84</td></tr>
-                            <tr><td>[학기 종료 안내] 22년 1학기 종료까지 이제 6주 남았습니다. </td><td>2022.05.18</td><td>17</td></tr>
+                            <tr><td style = "cursor:pointer;" onClick = " location.href='notice.html' " onMouseOver = " window.status = 'notice.html' " onMouseOut = " window.status = '' "><span class="cate">[신규 데이터 요청]</span> 새로운 데이터가 필요하신 분은 언제든 요청 바랍니다. </td><td class="tl">2022.05.21</td><td class="tl">3</td></tr>
+                            <tr><td style = "cursor:pointer;" onClick = " location.href='notice.html' " onMouseOver = " window.status = 'notice.html' " onMouseOut = " window.status = '' "><span class="cate">[튜토리얼 공지]</span> tensorflow와 keras의 라이브러리를 이용하여 같이 공부해 봅시다.</td><td class="tl">2022.05.19</td><td class="tl">84</td></tr>
+                            <tr><td style = "cursor:pointer;" onClick = " location.href='notice.html' " onMouseOver = " window.status = 'notice.html' " onMouseOut = " window.status = '' "><span class="cate">[학기 종료 안내]</span> 22년 1학기 종료까지 이제 6주 남았습니다. </td><td class="tl">2022.05.18</td><td class="tl">17</td></tr>
                         </table>
                     </fieldset>
                 </div><br>
-    
+
+                <div>
+                    <fieldset>  
+                        <legend>🔥Forum 인기글🔥</legend>
+                        <table>
+                            <colgroup>
+                                <col width="550px"/>
+                                <col width="150px"/>
+                                <col width="100px"/>
+                            </colgroup>
+                            <tr><th>제목</th><th>날짜</th><th>조회수</th></tr>
+                            <tr><td style = "cursor:pointer;" onClick = " location.href='forumHOT.html' " onMouseOver = " window.status = 'forumHOT.html' " onMouseOut = " window.status = '' "><span class="cate">[공지사항]</span> Datawiki가 새롭게 단장됩니다. 더욱 개선된 사이트를 기대해 주세요.</td><td class="tl">2022.05.08</td><td class="tl">100</td></tr>
+                            <tr><td style = "cursor:pointer;" onClick = " location.href='forumHOT.html' " onMouseOver = " window.status = 'forumHOT.html' " onMouseOut = " window.status = '' "><span class="cate">[튜토리얼 공지]</span> tensorflow와 keras의 라이브러리를 이용하여 같이 공부해 봅시다.</td><td class="tl">2022.05.19</td><td class="tl">84</td></tr>
+                            <tr><td style = "cursor:pointer;" onClick = " location.href='forumHOT.html' " onMouseOver = " window.status = 'forumHOT.html' " onMouseOut = " window.status = '' "><span class="cate">[공모전 종료 안내]</span> 2022년 데이터 위키 공모전이 성공리에 마감 되었습니다. </td><td class="tl">2022.05.14</td><td class="tl">50</td></tr>
+                        </table>
+                    </fieldset>
+                </div><br>    
 
 
                 <div>
                     <fieldset>  
                         <legend>👩‍💻Colosseum👨‍💻</legend>
                         <table>
+                            <colgroup>
+                                <col width="550px"/>
+                                <col width="150px"/>
+                                <col width="100px"/>
+                            </colgroup>
                             <tr><th>제목</th><th>시작일</th><th>마감일</th></tr>
-                            <tr><td style = "cursor:pointer;" onClick = " location.href='http://www.cvlibs.net/datasets/kitti/' " onMouseOver = " window.status = 'http://www.cvlibs.net/datasets/kitti/' " onMouseOut = " window.status = '' ">도로위 인식의 최강자 선발 대회</td><td>2022.06.01</td><td>2022.07.01</td></tr>
-                            <tr><td style = "cursor:pointer;" onClick = " location.href='http://www.statmt.org/wmt19/' " onMouseOver = " window.status = 'http://www.statmt.org/wmt19/' " onMouseOut = " window.status = '' ">Did you understand what I said?</td><td>2022.08.01</td><td>2022.09.01</td></tr>
+                            <tr><td style = "cursor:pointer;" onClick = " location.href='http://www.cvlibs.net/datasets/kitti/' " onMouseOver = " window.status = 'http://www.cvlibs.net/datasets/kitti/' " onMouseOut = " window.status = '' "><span class="cate">[진행중] </span><span class="colosseum-color">도로위 인식의 최강자 선발 대회</span></td><td class="tl">2022.06.01</td><td>2022.07.01</td></tr>
+                            <tr><td style = "cursor:pointer;" onClick = " location.href='http://www.statmt.org/wmt19/' " onMouseOver = " window.status = 'http://www.statmt.org/wmt19/' " onMouseOut = " window.status = '' "><span class="cate">[진행중] </span><span class="colosseum-color">Did you understand what I said?</span></td><td class="tl">2022.08.01</td><td>2022.09.01</td></tr>
                         </table>
                     </fieldset>
                 </div><br>
@@ -205,9 +237,9 @@
                         <legend>📚Data wiki🌐</legend>
                         <table>
                             <tr><th>데이터명</th><th>카테고리</th></tr>
-                            <tr><td style = "cursor:pointer;" onClick = " location.href='http://www.cvlibs.net/datasets/kitti/' " onMouseOver = " window.status = 'http://www.cvlibs.net/datasets/kitti/' " onMouseOut = " window.status = '' ">KITTI (Karlsruhe Institute of Technology and Toyota Technological Institute)</td><td>Image</td></tr>
-                            <tr><td style = "cursor:pointer;" onClick = " location.href='http://image-net.org/about-overview' " onMouseOver = " window.status = 'http://image-net.org/about-overview' " onMouseOut = " window.status = '' ">The ImageNet dataset contains 14,197,122 annotated images according to the WordNet hierarchy.</td><td>Image</td></tr>
-                            <tr><td style = "cursor:pointer;" onClick = " location.href='http://research.google.com/youtube8m/index.html' " onMouseOver = " window.status = 'http://research.google.com/youtube8m/index.html' " onMouseOut = " window.status = '' ">The YouTube-8M dataset is a large scale video dataset, which includes more than 7 million...</td><td>Video</td></tr>
+                            <tr><td style = "cursor:pointer;" onClick = " location.href='http://www.cvlibs.net/datasets/kitti/' " onMouseOver = " window.status = 'http://www.cvlibs.net/datasets/kitti/' " onMouseOut = " window.status = '' "><span class="datawiki-name">KITTI</span> - (Karlsruhe Institute of Technology and Toyota Technological Institute)</td><td>Image</td></tr>
+                            <tr><td style = "cursor:pointer;" onClick = " location.href='http://image-net.org/about-overview' " onMouseOver = " window.status = 'http://image-net.org/about-overview' " onMouseOut = " window.status = '' "><span class="datawiki-name">ImageNet</span> - The ImageNet dataset contains 14,197,122 annotated images according to the WordNet hierarchy.</td><td>Image</td></tr>
+                            <tr><td style = "cursor:pointer;" onClick = " location.href='http://research.google.com/youtube8m/index.html' " onMouseOver = " window.status = 'http://research.google.com/youtube8m/index.html' " onMouseOut = " window.status = '' "><span class="datawiki-name">YouTube-8M</span> - The YouTube-8M dataset is a large scale video dataset, which includes more than 7 million...</td><td>Video</td></tr>
                         </table>
                     </fieldset>
                 </div><br>
