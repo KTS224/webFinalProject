@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="main_style.css">
         <style>
             * {box-sizing: border-box;}
-            /* body {font-family: Verdana, sans-serif;} */
+            /* body {font-family: 'Noto Sans KR','Apple SD Gothic Neo','AppleGothic','FontAwesome',sans-serif} */
             .mySlides {display: none;}
             /* img {vertical-align: middle;} */
 
@@ -62,9 +62,27 @@
             .info-wrap-inside {
                 background-color:rgba(153, 161, 147, 0.171)
             }
-            /* .menu-bar, .blue-bar, .mySlides, footer {
-                width: 2000px;
-            } */
+            
+            ul {
+                list-style: none;
+            }
+
+            .info-wrap-inside > ul > li {
+                font-size: 20px;
+            }
+
+            .info-wrap-inside > ul > li > ul{
+                font-size: 15px;
+            }
+
+            legend {
+                font-size: 25px;
+                font-weight: bold;
+            }
+
+            td {
+                padding: 10px;
+            }
         </style>
     </head>
     <body>
@@ -142,62 +160,59 @@
             </script>
 
             <div class="info-wrap">
-                <div class="info-wrap-inside">
-                    <ul>
-                        <li>공지사항
-                            <ul>
-                                <li>"학기 종료 안내","22년 1학기 종료까지 이제 6주 남았습니다. ","2022.05.18","17"</li>
-                                <li>"튜토리얼 공지","tensorflow와 keras의 라이브러리를 이용하여 같이 공부해 봅시다.","2022.05.19","84"</li>
-                                <li>"신규 데이터 요청","새로운 데이터가 필요하신 분은 언제든 요청 바랍니다.","2022.05.21","3"</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
 
-                <br>
-                
-                <div class="info-wrap-inside">
-                    <ul>
-                        <li>Colosseum
-                            <ul>
-                                <li><a href="https://www.naver.com">"천하제일 얼굴 인식대회","2022.04.01","2022.05.01","celebA"</a></li>
-                                <li>"도로위 인식의 최강자 선발 대회","2022.06.01","2022.07.01","kitti"</li>
-                                <li>"Did you understand what I said?","2022.08.01","2022.09.01","wmt19"</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            
-                <br>
+                <div>
+                    <fieldset>  
+                        <legend>🔥Forum 인기글🔥</legend>
+                        <table>
+                            <tr><th>제목</th><th>날짜</th><th>조회수</th></tr>
+                            <tr><td>[공지사항] Datawiki가 새롭게 단장됩니다. 더욱 개선된 사이트를 기대해 주세요.</td><td>2022.05.08</td><td>100</td></tr>
+                            <tr><td>[튜토리얼 공지] tensorflow와 keras의 라이브러리를 이용하여 같이 공부해 봅시다.</td><td>2022.05.19</td><td>84</td></tr>
+                            <tr><td>[공모전 종료 안내] 2022년 데이터 위키 공모전이 성공리에 마감 되었습니다. </td><td>2022.05.14</td><td>50</td></tr>
+                        </table>
+                    </fieldset>
+                </div><br>
 
 
-                <div class="info-wrap-inside">
-                    <ul>
-                        <li>datawiki
-                            <ul>
-                                <li>"cmu","CMU","-","http://domedb.perception.cs.cmu.edu/","Image","3-D Estimation","-","-","1","-"</li>
-                                <li></li>
-                                <li>"Did you understand what I said?","2022.08.01","2022.09.01","wmt19"</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
+                <div>
+                    <fieldset>  
+                        <legend>공지사항</legend>
+                        <table>
+                            <tr><th>제목</th><th>날짜</th><th>조회수</th></tr>
+                            <tr><td>[신규 데이터 요청] 새로운 데이터가 필요하신 분은 언제든 요청 바랍니다. </td><td>2022.05.21</td><td>3</td></tr>
+                            <tr><td>[튜토리얼 공지] tensorflow와 keras의 라이브러리를 이용하여 같이 공부해 봅시다.</td><td>2022.05.19</td><td>84</td></tr>
+                            <tr><td>[학기 종료 안내] 22년 1학기 종료까지 이제 6주 남았습니다. </td><td>2022.05.18</td><td>17</td></tr>
+                        </table>
+                    </fieldset>
+                </div><br>
+    
 
-                <br>
-                
+
+                <div>
+                    <fieldset>  
+                        <legend>👩‍💻Colosseum👨‍💻</legend>
+                        <table>
+                            <tr><th>제목</th><th>시작일</th><th>마감일</th></tr>
+                            <tr><td style = "cursor:pointer;" onClick = " location.href='http://www.cvlibs.net/datasets/kitti/' " onMouseOver = " window.status = 'http://www.cvlibs.net/datasets/kitti/' " onMouseOut = " window.status = '' ">도로위 인식의 최강자 선발 대회</td><td>2022.06.01</td><td>2022.07.01</td></tr>
+                            <tr><td style = "cursor:pointer;" onClick = " location.href='http://www.statmt.org/wmt19/' " onMouseOver = " window.status = 'http://www.statmt.org/wmt19/' " onMouseOut = " window.status = '' ">Did you understand what I said?</td><td>2022.08.01</td><td>2022.09.01</td></tr>
+                        </table>
+                    </fieldset>
+                </div><br>
+
+
                 <div class="info-wrap-inside">
-                    <ul>
-                        <li>Colosseum
-                            <ul>
-                                <li><a href="https://www.naver.com">"천하제일 얼굴 인식대회","2022.04.01","2022.05.01","celebA"</a></li>
-                                <li>"도로위 인식의 최강자 선발 대회","2022.06.01","2022.07.01","kitti"</li>
-                                <li>"Did you understand what I said?","2022.08.01","2022.09.01","wmt19"</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
+                    <fieldset>  
+                        <legend>📚Data wiki🌐</legend>
+                        <table>
+                            <tr><th>데이터명</th><th>카테고리</th></tr>
+                            <tr><td style = "cursor:pointer;" onClick = " location.href='http://www.cvlibs.net/datasets/kitti/' " onMouseOver = " window.status = 'http://www.cvlibs.net/datasets/kitti/' " onMouseOut = " window.status = '' ">KITTI (Karlsruhe Institute of Technology and Toyota Technological Institute)</td><td>Image</td></tr>
+                            <tr><td style = "cursor:pointer;" onClick = " location.href='http://image-net.org/about-overview' " onMouseOver = " window.status = 'http://image-net.org/about-overview' " onMouseOut = " window.status = '' ">The ImageNet dataset contains 14,197,122 annotated images according to the WordNet hierarchy.</td><td>Image</td></tr>
+                            <tr><td style = "cursor:pointer;" onClick = " location.href='http://research.google.com/youtube8m/index.html' " onMouseOver = " window.status = 'http://research.google.com/youtube8m/index.html' " onMouseOut = " window.status = '' ">The YouTube-8M dataset is a large scale video dataset, which includes more than 7 million...</td><td>Video</td></tr>
+                        </table>
+                    </fieldset>
+                </div><br>
+
             </div> 
-
 
             
             <footer>
