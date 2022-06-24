@@ -21,23 +21,28 @@
             /* width: 100%; */
             height: 95vh;
             /* background-color: rgba(190, 190, 190, 0.768);  */
+           
+           
             }
             
             .main__container {
             height: 700px;
             padding-top: 10px;
             padding-bottom: 10px;
+             margin-bottom: -200px;
             }
             
             .board__container,
             .contents__container,
             .editor__container {
-            width: 860px;
+           
+            width: 858px;
             display: flex;
             justify-content: flex-start;
             align-items: center;
             flex-direction: column;
-            background-color:rgb(228, 245, 249);
+            background-color:rgba(229, 250, 255, 0.549);
+            border: 1.7px solid rgba(42, 43, 44, 0.358);
             }
             
             .board__container {
@@ -45,7 +50,7 @@
             height: 220px;
             padding-top: 10px;
             padding-bottom: 10px;
-            border-radius: 10px;
+            /*border-radius: 10px;*/
            /* box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);*/
             position: relative;
             }
@@ -56,7 +61,7 @@
             height: 220px;
             padding-top: 10px;
             padding-bottom: 10px;
-            border-radius: 10px;
+            /*border-radius: 10px;*/
             /*box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);*/
             }
             
@@ -65,7 +70,7 @@
             height: 260px;
             padding-top: 10px;
             padding-bottom: 10px;
-            border-radius: 10px;
+           /* border-radius: 10px;*/
             /*box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);*/
             }
             
@@ -157,7 +162,17 @@
             }
 
             th {  padding: 7px; border : 1px solid black;  border-collapse : collapse;  border-left: none; border-right: none;border-top: none;    
-            }     
+            }
+            
+            details{
+                text-align: center; margin-left:-10px;
+                margin-bottom:10px; 
+
+            }
+            #k{
+                color: rgb(53, 53, 186);
+            }
+
 
            /*#check1 { padding-left: 500px 10px;top: 50px; right: 0;}*/
 
@@ -173,8 +188,8 @@
                     <a href="main.html" class="bar-item">Home</a>
                     <a href="datawiki.html" class="bar-item">DataWiki</a>
                     <a href="sharehub.html" class="bar-item">ShareHub</a>
-                    <a href="colosseum.html" class="bar-item">Colosseum</a>
-                    <a href="forum.html" class="bar-item">Forum</a>
+                    <a href="#" class="bar-item">Colosseum</a>
+                    <a href="forumm.html" class="bar-item">Forum</a>
                     <a  href="https://swai.smu.ac.kr" ><img class="logo" src="IMG/swai_link.png"></a>
                 </nav>
             </header>
@@ -183,6 +198,90 @@
                 <img class="blue-bar" src="IMG/blue_bar.png" style="height: 50px;">
             </div>
                 <h2 style="color:rgb(108, 108, 108)">질의 응답 게시판</h2>
+                <fieldset >
+                    <table style="text-align: center; margin-left:130px;">
+                     <thead >
+                       
+                        <tr>
+                            
+                            <th class="board___column">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp번호&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                제목&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp작성일&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp추천&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</th>
+                           
+                        </tr>
+                     </thead>
+                    </table> 
+                        
+                       <br>
+                            <details >
+                                <summary>  1&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp[ 안녕하세요 ]&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 2022.05.01&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 10</summary>
+                                <div id="k"><br>Datawiki에 오신 것을 환영합니다.</div>
+                                
+                            </details>
+                           
+                            <br>
+                            <details>
+                                <summary>  2&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp[ 관리자소개 ]&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 2022.05.05&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp     5 </summary>
+                                <div id="k"><br>Datawiki의 관리자를 소개 합니다.</div>
+                            </details>
+                            <br>
+                            <details>
+                                <summary>  3&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp[ 최신 뉴스 ]&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2022.05.06&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    22 </summary>
+                                <div id="k"><br>Datawiki는 상명대 천안캠퍼스에서 주관하는 데이터 공유 사이트 입니다.</div>
+                            </details>
+                            
+                            <br>
+                            <details>
+                                <summary>  4&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp[ 공지사항 ]&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2022.05.08&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  100 </summary>
+                                <div id="k"><br>Datawiki가 새롭게 단장됩니다. 더욱 개선된 사이트를 기대해 주세요.</div>
+                            </details>
+                         
+                            <br>
+                            <details>
+                                <summary>  5&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp[ 추가 공지 사항 ]&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2022.05.10&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1 </summary>
+                                <div id="k"><br>Datawiki를 새롭게 개선하기 위한 메니저를 공모합니다.</div>
+                            </details>
+                            <br>
+                                <details>
+                                <summary>  6&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp[ 2022년 데이터위키 공모전 ]&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2022.05.12&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  44 </summary>
+                                <div id="k"><br>2022년 데이터 위키는 이미지 인식 주제로 진행합니다.</div>
+                            </details>
+                            <br>
+                            <details>
+                                <summary>  7&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp[ 2022년 공모전 종료 안내 ]&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2022.05.14&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp22 </summary>
+                                <div id="k"><br>2022년 데이터 위키 공모전이 성공리에 마감 되었습니다.</div>
+                            </details>
+                        
+                            <br>
+                            <details>
+                                <summary>  8&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp[ 2023년 데이터 위키 공모전 ]&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 2022.05.16&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  50 </summary>
+                                <div id="k"><br>2023년 데이터 위키 공모전을 소개 합니다.</div>
+                            </details>
+                
+                
+                            <br>
+                            <details>
+                                <summary>  9&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp[ 학기 종료 안내 ]&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2022.05.18&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  17 </summary>
+                                <div id="k"><br>22년 1학기 종료까지 이제 6주 남았습니다. </div>
+                            </details>
+                
+                            <br>
+                            <details>
+                                <summary>  10&nbsp&nbsp&nbsp&nbsp&nbsp[ 튜토리얼 공지 ]&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2022.05.19&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp84 </summary>
+                                <div id="k"><br>tensorflow와 keras의 라이브러리를 이용하여 같이 공부해 봅시다.</div>
+                            </details>
+                            
+                            
+                            <br>
+                            <details>
+                                <summary>  11&nbsp&nbsp&nbsp&nbsp&nbsp[ 신규 데이터 요청 ]&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2022.05.21&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 3 </summary>
+                                <div id="k"><br>새로운 데이터가 필요하신 분은 언제든 요청 바랍니다.</div>
+                            </details>
+
+    </fieldset>
+
+
+
+
             <main class="main__container">
                 <div class="board__container">
                 <table class="board">
@@ -227,6 +326,7 @@
             </main>
              
         <script>
+
             const boardTableBody = document.querySelector('#board-body');
             
             const contentsContainer = document.querySelector('.contents__container');
@@ -245,15 +345,17 @@
 
             function hideRow()  {
             const row1 = document.getElementById('contents-container');
-            //const row2 = document.getElementById('editor-container');
+            const row2 = document.getElementById('editor-container');
             row1.style.display = 'none';
            // row2.style.display = 'none';
+              row2.style.display = '';
             }
 
             function showRow()  {
             const row1 = document.getElementById('contents-container');
-            //const row2 = document.getElementById('editor-container');
+            const row2 = document.getElementById('editor-container');
             row1.style.display = '';
+            row2.style.display = 'none';
            // row2.style.display = '';
             }
 
@@ -491,7 +593,7 @@
             
             <!--<input type="text" size="100" maxlength="8" name="member_name"  value="메모장 기능"  > -->
         </div>
-<br><br><br>
+<br>
         <footer>
             <div class="layoutLeft">
                 <div class="link">
@@ -499,24 +601,6 @@
                         <li style="float: left;" class="color"><a href="https://www.smu.ac.kr/ko/intro/privacyPolicy.do" target="_blank">개인정보처리방침</a></li>
                         
                         <li><a href="https://swai.smu.ac.kr/98/03.php">이메일주소무단수집거부</a></li></ul>
-
-                        <ul>
-                            <li>
-                                <form class="footerform">
-                                    <select onchange="window.open(value,'_blank');">
-                                      <option value="main.html">관련사이트</option>
-                                      <option value="https://www.smu.ac.kr/ctlc/index.do">교수학습개발센터</option>
-                                      <option value="https://www.smu.ac.kr/cilcec/index.do">국제언어문화교육원</option>
-                                      <option value="https://www.smu.ac.kr/uni">대외협력처</option>
-                                      <option value="https://www.smu.ac.kr/dc">상명수련원</option>
-                                      <option value="https://www.smu.ac.kr/iacf">산학협력단</option>
-                                      <option value="https://www.smu.ac.kr/rotc2021">학생군사교육단</option>
-                                      <option value="https://www.smu.ac.kr/scc">학생상담센터</option>
-                                      <option value="https://www.smu.ac.kr/dormi2">학생생활관</option>
-                                    </select>
-                                </form>
-                            </li>
-                        </ul>
                          
                     </ul>
                 </div>
@@ -524,7 +608,7 @@
             <div class="copyright" style="margin: 30px;" >
                 <div class="info">
                     <span class="address">(03016) 서울시 종로구 홍지문 2길 20 상명대학교 SW중심대학사업단</span>
-                </div>
+                </div><br>
                 <div class="info">
                     <span class="copy">Copyright By SangMyung University. All Rights Reserved.</span>
                     <!-- Big Buck Bunny - 4 - Death Becomes Fur<br/>-->
