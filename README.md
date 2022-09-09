@@ -1,7 +1,8 @@
 # webFinalProject
-[2022-1] 웹프로그래밍 기말 프로젝트 👨‍💻👩‍💻👨‍💻
+> [2022-1] 웹프로그래밍 기말 프로젝트 👨‍💻👩‍💻👨‍💻
 
-주소 : http://smuwiki.dothome.co.kr/main.html
+> 주소 : http://smuwiki.dothome.co.kr/main.html
+220923 만료
 
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white"><img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"><img src="https://img.shields.io/badge/css3-1572B6?style=for-the-badge&logo=css3&logoColor=white"><img src="https://img.shields.io/badge/filezilla-BF0000?style=for-the-badge&logo=filezilla&logoColor=white"><img src="https://img.shields.io/badge/figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white">
 
